@@ -2,8 +2,23 @@
 {
     public static void Day1Part1And2()
     {
-        #region inputs
-        var Input = @"18814
+        var reader = new StringReader(Input);
+        string? line;
+        var elvesCals = new List<int>() { 0 };
+
+        while ((line = reader.ReadLine()) != null)
+            if (line == "")
+                elvesCals.Add(0);
+            else
+                elvesCals[^1] += int.Parse(line);
+
+        elvesCals.Sort();
+        Console.WriteLine(elvesCals[^1]);
+        Console.WriteLine(elvesCals[^1] + elvesCals[^2] + elvesCals[^3]);
+    }    
+     
+    #region inputs
+    private const string Input = @"18814
 
 1927
 12782
@@ -2246,7 +2261,8 @@
 4994
 7160
 6253";
-        var TestInput = @"1000
+
+    private const string TestInput = @"1000
 2000
 3000
 
@@ -2259,21 +2275,7 @@
 8000
 9000
 
-10000"; 
-        #endregion
+10000";
+#endregion
 
-        var reader = new StringReader(Input);
-        string? line;
-        var elvesCals = new List<int>() { 0 };
-
-        while ((line = reader.ReadLine()) != null)
-            if (line == "")
-                elvesCals.Add(0);
-            else
-                elvesCals[^1] += int.Parse(line);
-
-        elvesCals.Sort();
-        Console.WriteLine(elvesCals[^1]);
-        Console.WriteLine(elvesCals[^1] + elvesCals[^2] + elvesCals[^3]);
-    }    
 }
