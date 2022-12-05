@@ -4,13 +4,9 @@
     <projectFile>AdventOfCode2022/AdventOfCode2022.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a81c1c79-2ddf-4622-a9ff-8a772be5cd3c" name="Changes" comment="test">
+    <list default="true" id="a81c1c79-2ddf-4622-a9ff-8a772be5cd3c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AdventOfCode2022/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AdventOfCode2022/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdventOfCode2022/Day1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode2022/Day1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdventOfCode2022/Day2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode2022/Day2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdventOfCode2022/Day3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode2022/Day3.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdventOfCode2022/Day4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode2022/Day4.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdventOfCode2022/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode2022/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +121,8 @@
       <option name="presentableId" value="Default" />
       <updated>1670197282620</updated>
       <workItem from="1670197292202" duration="1827000" />
-      <workItem from="1670201033160" duration="1522000" />
+      <workItem from="1670201033160" duration="1858000" />
+      <workItem from="1670242045363" duration="147000" />
     </task>
     <task id="LOCAL-00001" summary="minor refactors">
       <created>1670198213135</created>
@@ -141,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670198858453</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="tidy up">
+      <created>1670202607087</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670202607087</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +180,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="minor refactors" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="tidy up" />
+    <option name="LAST_COMMIT_MESSAGE" value="tidy up" />
   </component>
 </project>
