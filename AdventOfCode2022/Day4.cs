@@ -1,6 +1,6 @@
 ﻿internal static class Day4
 {
-    public static void day4part1()
+    public static void Day4Part1()
     {
         #region inputs
         string input = @"2-4,6-8
@@ -1015,37 +1015,37 @@
         var count2 = 0;
   
         var reader = new StringReader(input2);
-        string line;
+        string? line;
         
         while ((line = reader.ReadLine()) != null)
         {
             var elves = line.Split(",");
 
-            var Elf1Section = elves[0].Split("-");
-            var Elf2Section = elves[1].Split("-");
+            var elf1Section = elves[0].Split("-");
+            var elf2Section = elves[1].Split("-");
 
             //way1
-            string AllElf1Sections = ",";
-            string AllElf2Sections = ",";
-            for (int i = int.Parse(Elf1Section[0]); i <= int.Parse(Elf1Section[1]); i++)
-                AllElf1Sections += i + ",";
-            for (int i = int.Parse(Elf2Section[0]); i <= int.Parse(Elf2Section[1]); i++)
-                AllElf2Sections += i + ",";
+            var allElf1Sections = ",";
+            var allElf2Sections = ",";
+            for (var i = int.Parse(elf1Section[0]); i <= int.Parse(elf1Section[1]); i++)
+                allElf1Sections += i + ",";
+            for (var i = int.Parse(elf2Section[0]); i <= int.Parse(elf2Section[1]); i++)
+                allElf2Sections += i + ",";
 
-            if (AllElf1Sections.Contains(AllElf2Sections) || AllElf2Sections.Contains(AllElf1Sections))
+            if (allElf1Sections.Contains(allElf2Sections) || allElf2Sections.Contains(allElf1Sections))
                 count++;
 
             //way2
-            if (int.Parse(Elf1Section[0]) >= int.Parse(Elf2Section[0]) && int.Parse(Elf1Section[1]) <= int.Parse(Elf2Section[1]))
+            if (int.Parse(elf1Section[0]) >= int.Parse(elf2Section[0]) && int.Parse(elf1Section[1]) <= int.Parse(elf2Section[1]))
                 count2++;
-            else if (int.Parse(Elf2Section[0]) >= int.Parse(Elf1Section[0]) && (int.Parse(Elf2Section[1]) <= int.Parse(Elf1Section[1])))
+            else if (int.Parse(elf2Section[0]) >= int.Parse(elf1Section[0]) && (int.Parse(elf2Section[1]) <= int.Parse(elf1Section[1])))
                 count2++;
         }
         Console.WriteLine("way1: " + count);
         Console.WriteLine("way2: " + count2);
     }
 
-    public static void day4part2()
+    public static void Day4Part2()
     {
         #region inputs
         string input = @"2-4,6-8
@@ -2064,15 +2064,15 @@
         while ((line = reader.ReadLine()) != null)
         {
             var elves = line.Split(",");
-            var Elf1Section = elves[0].Split("-");
-            var Elf2Section = elves[1].Split("-");
+            var elf1Section = elves[0].Split("-");
+            var elf2Section = elves[1].Split("-");
 
             //if  elf 1 value1 & Value2  > elf 2Value2
-            if (int.Parse(Elf1Section[0]) > int.Parse(Elf2Section[1]) && int.Parse(Elf1Section[1]) > int.Parse(Elf2Section[1]))
+            if (int.Parse(elf1Section[0]) > int.Parse(elf2Section[1]) && int.Parse(elf1Section[1]) > int.Parse(elf2Section[1]))
                 continue;
 
             //if elf 1 value 1 & value2 < elf2 value 1
-            if (int.Parse(Elf1Section[0]) < int.Parse(Elf2Section[0]) && int.Parse(Elf1Section[1]) < int.Parse(Elf2Section[0]))
+            if (int.Parse(elf1Section[0]) < int.Parse(elf2Section[0]) && int.Parse(elf1Section[1]) < int.Parse(elf2Section[0]))
                 continue;
 
             count++;

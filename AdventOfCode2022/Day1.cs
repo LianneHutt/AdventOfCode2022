@@ -1,6 +1,6 @@
 ﻿internal static class Day1
 {
-    public static void day1()
+    public static void Day1Part1And2()
     {
         #region inputs
         var Input = @"18814
@@ -2270,10 +2270,10 @@
             if (line == "")
                 elvesCals.Add(0);
             else
-                elvesCals[elvesCals.Count - 1] += int.Parse(line);
+                elvesCals[^1] += int.Parse(line);
 
         elvesCals.Sort();
-        Console.WriteLine(elvesCals[elvesCals.Count - 1]);
-        Console.WriteLine(elvesCals[elvesCals.Count - 1] + elvesCals[elvesCals.Count - 2] + elvesCals[elvesCals.Count - 3]);
+        Console.WriteLine(elvesCals[^1]);
+        Console.WriteLine(elvesCals[^1] + elvesCals[^2] + elvesCals[^3]);
     }    
 }

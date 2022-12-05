@@ -2522,7 +2522,6 @@ C Z";
                 if (inputSplits[0] == "C")
                     totalPoints += 6;
             }
-
             if (inputSplits[1] == "Y")
             {
                 totalPoints += 2;
@@ -2531,7 +2530,6 @@ C Z";
                 if (inputSplits[0] == "A")
                     totalPoints += 6;
             }
-
             if (inputSplits[1] == "Z")
             {
                 totalPoints += 3;
@@ -2544,7 +2542,7 @@ C Z";
         Console.WriteLine(totalPoints);
     }
 
-    public static void Day2part2()
+    public static void Day2Part2()
     {
         #region inputs
         string input = @"B Z

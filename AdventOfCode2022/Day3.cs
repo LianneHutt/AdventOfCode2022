@@ -1,8 +1,9 @@
 ﻿internal static class Day3
 {
-    public static void day3part1()
+    public static void Day3Part1()
     {
         #region inputs
+        
         string inputtest = @"vJrwpWtwJgWrhcsFMMfFFhFp
 jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
 PmmdzqPrVvPwwTWBwg
@@ -333,7 +334,7 @@ ZZJzSHpzPrJzHFmMVMFmHCLNtV";
         Console.WriteLine(total);
     }
 
-    public static void day3Part2()
+    public static void Day3Part2()
     {
         #region inputs
         string inputtest = @"vJrwpWtwJgWrhcsFMMfFFhFp
@@ -643,12 +644,13 @@ MLmlMTPtQtMNlhbqbbqhflBB
 rcrvjpSvScbRbBvbDBPG
 ZZJzSHpzPrJzHFmMVMFmHCLNtV";
 #endregion
-        string alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+        const string alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
         var total = 0;
         var lines = input.Split("\r\n");
 
-        for (int lineIndex = 0; lineIndex < lines.Count(); lineIndex += 3) //For every 3 lines
+        for (var lineIndex = 0; lineIndex < lines.Count(); lineIndex += 3) //For every 3 lines
         {
             var line1 = lines[lineIndex];
             var line2 = lines[lineIndex + 1];
